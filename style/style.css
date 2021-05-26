@@ -8,6 +8,10 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+html {
+    font-family: 'Hind', sans-serif;
+}
+
 
 .wrapper {
     max-width: 1100px;
@@ -16,7 +20,6 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Hind', sans-serif;
 }
 
 /* HEADER STYLING */
@@ -106,14 +109,174 @@ img {
     background-color: #ffc63e;
     padding: 10px 0 10px 0;
     border: none;
-    margin-top: 50px;
+    margin: 60px 0 60px 0;
     text-align: center;
     height: 60px;
     width: 85%;
-
 }
 
 .radio p {
     padding-left: 5px;
 }
 
+/* CASTOR OIL STYLING */
+
+h2 {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    color: #6ab2bd;
+    font-family: 'Hind', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center; 
+    text-transform: uppercase;
+    padding: 20px 0 20px 0;
+	position: relative;
+}
+
+h2:before, h2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+h2:before {
+    top: 0;
+    left:0;
+    right: 40%;
+	bottom: 80%;
+    border-top: 1px solid #6ab2bd;
+}
+
+h2:after {
+	top: 80%;
+    left: 40%;
+    right: 0;
+    bottom: 0;
+    border-bottom: 1px solid #6ab2bd;
+}
+
+.castorOil {
+    width: 82%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.castorOilText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+}
+
+.castorOilImg {
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+.castorOilImg img {
+    width: 420px;
+    height: auto;
+}
+
+.castorOil p {
+    font-size: 1.15rem;
+    line-height: 25px;
+    margin: 0 0 21px 0;
+}
+
+.castorOil .highlightText {
+    text-align: center;
+    background-color: #7ebcc6;
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 15px 40px 15px 40px;
+    margin-bottom: 0;
+}
+
+/* EMAIL STYLING */
+
+.email {
+    width: 82%;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+}
+
+.emailContainer {
+    display: flex;
+}
+
+.emailContainer img {
+    width: 250px;
+    height: auto;
+}
+
+.enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.enter p {
+    font-size: 1.2rem;
+    line-height: 25px;
+    margin: 0;
+}
+
+.enter button {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 25px;
+}
+
+/* DISCLAIMER STYLING */
+
+.disclaimer {
+    display: flex;
+    width: 90%;
+    margin-top: 40px;
+}
+
+.disclaimer p {
+    width: 50%;   
+    font-size: 0.7rem; 
+}
+
+.disclaimer img {
+    box-shadow: 0 0 0 0;
+    width: 250px;
+    position: relative;
+    float: right;
+    margin-right: -90%;
+    margin-top: -60px;
+}
+/* FOOTER STYLING */
+
+footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #143980;
+    color: white
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-right: 40px;
+}
