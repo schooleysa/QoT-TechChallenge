@@ -12,10 +12,11 @@ landingPage.download = (e) => {
     landingPage.addUser = (userObj) => {
     if (document.querySelector(".yes").checked === true) {
         b2b.push(userObj)
-        console.log(b2b)
+        window.open("assets/castor Oil For Optimizing Fertility, Pregnancy & Postpartum.pdf")
     } else if (document.querySelector(".no").checked === true) {
         b2c.push(userObj)
         console.log(b2c)
+        window.open("assets/Castor Oil For Optimizing Fertility, Pregnancy & Postpartum.pdf")
     } else {
         alert("Please make a selection")
     }
