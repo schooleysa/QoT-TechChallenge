@@ -29,7 +29,7 @@ header {
     color: #6ab2bd;
     font-family: 'Hind', sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     text-align: center; 
     text-transform: uppercase;
 }
@@ -113,6 +113,11 @@ img {
     text-align: center;
     height: 60px;
     width: 85%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffb300;
 }
 
 .radio p {
@@ -169,7 +174,7 @@ h2:after {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 0 10px 0 10px;
+    padding: 0 0px 0 10px;
 }
 
 .castorOilImg {
@@ -210,6 +215,9 @@ h2:after {
     display: flex;
 }
 
+.emailContainerImg {
+    width: 250px;
+}
 .emailContainer img {
     width: 250px;
     height: auto;
@@ -264,6 +272,7 @@ h4 {
     margin-right: -90%;
     margin-top: -60px;
 }
+
 /* FOOTER STYLING */
 
 footer {
@@ -280,3 +289,166 @@ footer p {
     font-size: 0.8rem;
     margin-right: 40px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1093px) {
+    .btn{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .castorOil {
+     flex-direction: column;   
+     justify-content: center;
+     align-items: center;
+    }
+
+    .castorOilText {
+        width: 90%;
+        padding: 0;
+    }
+
+    .castorOilImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0;
+
+    }
+
+    .disclaimer img {
+        margin-right: -80%;
+    }
+}
+
+@media (max-width: 900px) {
+    
+    .freeInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .freeInfoForm {
+        width: 70%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .disclaimer img {
+        margin-right: -65%;
+    }
+
+    .radio {
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .enter p {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .disclaimer img {
+        margin-right: -45%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    header {
+        font-size: 1.2rem;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .enter button {
+        width: 90%;
+    }
+
+    .disclaimer img {
+        margin-right: -32%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .email {
+        margin-bottom: 40px;
+    }
+
+    .emailContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enter {
+        width: 85%;
+        padding: 0;
+    }
+
+    .disclaimer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .disclaimer p {
+        width: 90%;
+    }
+
+    .disclaimer img {
+        margin-right: -25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .freeInfoForm {
+        width: 90%;
+    }
+
+    .freeInfoImg img {
+        width: 350px;
+        padding: 0;
+    }
+
+    .castorOilImg img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 350px) {
+    header{
+        font-size: 1.1rem;
+    }
+
+    .freeInfoImg img {
+        width: 250px;
+    }
+
+    .castorOil .highlightText {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .castorOilImg img {
+        width: 250px;
+    }
+
+    .enter button {
+        font-size: 1.3rem;
+    }
+
+    .disclaimer img {
+        margin-right: 0;
+    }
+}   
