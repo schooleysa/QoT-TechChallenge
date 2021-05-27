@@ -286,6 +286,21 @@ footer {
     color: white
 }
 
+.social {
+    color: white;
+    margin: 2px 20px 0 0;
+    font-size: 1.2rem;
+}
+
+.social i {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+}
+
 footer p {
     font-size: 0.8rem;
     margin-right: 40px;
