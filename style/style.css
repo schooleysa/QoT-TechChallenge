@@ -367,7 +367,13 @@ footer p {
     }
 
     .email {
-        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .emailContainer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .enter button {
@@ -380,16 +386,6 @@ footer p {
 }
 
 @media (max-width: 600px) {
-
-    .email {
-        margin-bottom: 40px;
-    }
-
-    .emailContainer {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
 
     .enter {
         width: 85%;
